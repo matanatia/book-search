@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --dark-blue:#204E5F;
+    --azure-blue:#B7D7D8;
+    --light-blue:#EDF7F5;
+    --peach-orange:#FFC6A8;
+    --light-red:#FF8984;
+    --error-red:#e04f4b;
+    --dark-grey-blue:#466f7e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: var(--light-blue);
+}
+
+.btn {
+    padding: 5px;
+    border-radius: 5px;
+    background: var(--light-blue);
+    border: var(--dark-blue) solid 2px;
+    color: var(--dark-blue);
+    font-weight: bolder;
+    margin: 5px;
+    transition: all .1s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}

@@ -1,0 +1,5 @@
+<div class="center" id="main-body">
+    <app-book *ngFor="let book of searchService.search_results" [book]="book"></app-book>
+    <button class="btn" *ngIf="searchService.search_results.length > 0" [disabled]="!searchService.found_results" (click)="LoadMore()">Load more</button>
+</div>
+

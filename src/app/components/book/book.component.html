@@ -1,0 +1,16 @@
+<div class="book-info" (click)="toggelHiddenInfo()">
+
+  <h3>Title: {{ book.title }} </h3>
+  <h3>Authors: {{ book.authors.join(", ") }} </h3>
+  <h3><a [href]="book.previewLink" target="_blank" rel="noopener noreferrer">Preview Link</a></h3>
+
+  <div class="hidden-book-info" *ngIf="showInfo">
+    <img [src]="book.imageLinks.smallThumbnail">
+    <div class="hidden-info-container">
+      <h3>Publisher: <span class="colored">{{ book.publisher }}</span></h3>
+      <h3>Published Date: <span class="colored">{{ book.publishedDate }} </span></h3>
+      <h3>Description:</h3>
+      <h3><span class="colored">{{ book.description }} </span></h3>
+    </div>
+  </div>
+</div>
