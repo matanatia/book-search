@@ -6,16 +6,19 @@
     --light-red:#FF8984;
     --error-red:#e04f4b;
     --dark-grey-blue:#466f7e;
+    --disabled-grey-blue:#5c90a3;
 }
 
 * {
     margin: 0;
     padding: 0;
+    color: var(--dark-blue);
 }
 
 html, body {
     width: 100%;
     height: 100%;
+    font-family: 'Merienda', cursive;
 }
 
 body {
@@ -36,4 +39,26 @@ body {
 .btn:hover {
     cursor: pointer;
     transform: scale(1.05);
+}
+
+.btn:disabled {
+    border: var(--disabled-grey-blue) solid 2px;
+    color: var(--disabled-grey-blue);
+    cursor: auto;
+    transform: none;
+}
+
+
+.error-block {
+    width: 100%;
+    text-align: center;
+    color:var(--light-red);
+}
+
+.error-block * {
+    color:var(--light-red);
+}
+
+input.ng-invalid.ng-touched {
+    border: var(--error-red) solid 2px;
 }

@@ -16,8 +16,7 @@
 
 .book-info:hover {
     cursor: pointer;
-    position: relative;
-    top: -2px;
+    transform: scale(1.015);
 }
 
 a {
@@ -27,8 +26,8 @@ a {
 
 a:hover{
     color: var(--light-red);
-    position: relative;
-    left: 2px;
+    transform: scale(1.015);
+    
 }
 
 .hidden-book-info {

@@ -8,6 +8,9 @@ import { NavComponent } from './components/nav/nav.component';
 import { SearchFormComponent } from './components/search-form/search-form.component';
 import { SearchContentComponent } from './components/search-content/search-content.component';
 import { BookComponent } from './components/book/book.component';
+import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { BookComponent } from './components/book/book.component';
     NavComponent,
     SearchFormComponent,
     SearchContentComponent,
-    BookComponent
+    BookComponent,
+    LoginComponent,
+    HomeComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,9 @@
 <form #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm)">
   <div class="form-group">
-    <!-- <label for="search">Email Address:</label> -->
-    <input type="text" id="search" placeholder="book name..." class="form-control" ngModel name="search"
+    <input type="text" id="search" placeholder="book name..." ngModel name="search"
       #search="ngModel" minlength="3" required class="big">
   </div>
-  <button [disabled]="searchForm.form.invalid" class="big">Search</button>
+  <button [disabled]="searchForm.form.invalid" class="big btn">Search</button>
 </form>
 
 <!-- search - error msg -->

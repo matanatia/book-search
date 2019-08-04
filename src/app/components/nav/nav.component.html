@@ -1,4 +1,7 @@
 <nav>
-  <ng-content ></ng-content>
+  <h1 *ngIf="user" class="welcome-headline">Welcome, {{ user }}</h1>
+  <div class="container">
+      <ng-content ></ng-content>
+  </div>
 </nav>
 

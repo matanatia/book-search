@@ -1,16 +1,12 @@
 form {
     display: flex;
+    /* justify-content: space-around; */
 }
 
 .big {
     padding: 5px;
 }
 
-.error-block {
-    color:var(--light-red);
-    width: 100%;
-}
-
-input.ng-invalid.ng-touched {
-    border: var(--error-red) solid 2px;
+.btn {
+    margin-top: 0;
 }
